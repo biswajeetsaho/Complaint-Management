@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <>
       <div className="total_service_container" style={{ backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
-        <div style={{ width:"100%", padding:"25px", marginBottom:"5px", textAlign:"center" }}>
+        <div style={{ width:"100%", marginBottom:"5px", textAlign:"center" }}>
           <p className="services_main_heading"> Our Services</p>
         </div>
         <div className="service-container">

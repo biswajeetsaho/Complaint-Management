@@ -240,7 +240,7 @@ const WelcomePage = () => {
               </motion.div>
               <motion.hr
                 initial={{ width: 0 }}
-                animate={{ width: "100%" }}
+                animate={{ width: "20%" }}
                 transition={{ duration: 1, repeat: Infinity, repeatDelay: 3 }}
               />
 
@@ -255,6 +255,7 @@ const WelcomePage = () => {
                     viewBox="0 0 24 24"
                     width="24"
                     height="24"
+                    
                   >
                     <path d="M0 0h24v24H0z" fill="none" />
                     <path d="M10 17l5-5-5-5v10z" />
@@ -280,22 +281,23 @@ const WelcomePage = () => {
               whileTap={{ rotateY: -10 }}
               style={{ perspective: "1000px" }}
             >
-    
+              <img src="https://img.freepik.com/free-vector/customer-support-flat-design-illustration_23-2148889374.jpg?t=st=1723572990~exp=1723576590~hmac=7149dce9f943f278431dd0aca8d55576813560cfaed8646cce5d68791e61b1ae&w=740" alt="Welcome" className="welcome-image" />
             </motion.div>
           </div>
         </div>
-      </div>
-      <div ref={section1Ref}>
-        <AboutUs />
-      </div>
-      <div ref={section2Ref}>
-        <Services />
-      </div>
-      <div ref={section3Ref}>
-        <ContactUs />
-      </div>
-      <div ref={section4Ref}>
-        <FeedbackComponent/>
+
+        <div ref={section1Ref}>
+          <AboutUs />
+        </div>
+        <div ref={section2Ref}>
+          <Services />
+        </div>
+        <div ref={section3Ref}>
+          <ContactUs />
+        </div>
+        <div ref={section4Ref}>
+          <FeedbackComponent />
+        </div>
       </div>
     </>
   );
